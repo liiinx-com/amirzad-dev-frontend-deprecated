@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./vars.css";
+
+html {
+  font-size: var(--text-font-size);
+}
