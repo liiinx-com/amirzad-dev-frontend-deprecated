@@ -19,8 +19,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --watchAll=false --passWithNoTests",
+    "test:watch": "react-scripts test ",
+    "lint": "eslint ./src",
+    "validate": "npm run lint && npm run test",
+    "codecov": "codecov",
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +44,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "codecov": "^3.8.3",
+    "eslint": "^8.37.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.7",
+    "pretty-quick": "^3.1.3"
   }
 }
