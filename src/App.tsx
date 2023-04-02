@@ -1,3 +1,5 @@
+import "./themes/index.css";
+
 function App() {
   return (
     <div className="App">
